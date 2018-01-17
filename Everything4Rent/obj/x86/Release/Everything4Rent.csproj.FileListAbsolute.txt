@@ -1,0 +1,13 @@
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\bin\Release\Resources\DB.accdb
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\bin\Release\Everything4Rent.exe
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\bin\Release\Everything4Rent.pdb
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.main.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.Modules.User.LoginView.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.Properties.Resources.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.Template.Body.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.Template.Footer.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.Template.Header.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.Template.Wrapper.resources
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.csproj.GenerateResource.Cache
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.exe
+C:\Users\Test2\Documents\Visual Studio 2010\Projects\Everything4Rent\Everything4Rent\obj\x86\Release\Everything4Rent.pdb

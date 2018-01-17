@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39B849F9-2BA7-4F7E-A918-9770717B0B70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Everything4Rent</RootNamespace>
+    <AssemblyName>Everything4Rent</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\DataBaseConnector.cs" />
+    <Compile Include="Common\Router.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\AddProducts\addProduct.cs" />
+    <Compile Include="Modules\AddProducts\addProductView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\AddProducts\addProductView.Designer.cs">
+      <DependentUpon>addProductView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DashBoard\ActionBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DashBoard\ActionBar.Designer.cs">
+      <DependentUpon>ActionBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DashBoard\AdsPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DashBoard\AdsPage.Designer.cs">
+      <DependentUpon>AdsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DashBoard\DashboardModel.cs" />
+    <Compile Include="Modules\DashBoard\ShowRents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DashBoard\ShowRents.designer.cs">
+      <DependentUpon>ShowRents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\DashBoard\UserDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\DashBoard\UserDashBoard.Designer.cs">
+      <DependentUpon>UserDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Home\Categories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Home\Categories.Designer.cs">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Home\HomePage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Home\HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Product\Nadlan.cs" />
+    <Compile Include="Modules\Product\Pets.cs" />
+    <Compile Include="Modules\Product\PetsProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Product\PetsProducts.Designer.cs">
+      <DependentUpon>PetsProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Product\ProductItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Product\ProductItem.Designer.cs">
+      <DependentUpon>ProductItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Product\ProductModel.cs" />
+    <Compile Include="Modules\Product\NadlanProduct.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Product\NadlanProduct.Designer.cs">
+      <DependentUpon>NadlanProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Product\SecondHand.cs" />
+    <Compile Include="Modules\Product\SecondHandProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Product\SecondHandProducts.Designer.cs">
+      <DependentUpon>SecondHandProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Product\Vehicle.cs" />
+    <Compile Include="Modules\Product\VehicleProducts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Product\VehicleProducts.Designer.cs">
+      <DependentUpon>VehicleProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RentListings\ListingView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RentListings\ListingView.Designer.cs">
+      <DependentUpon>ListingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RentListings\ListItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\RentListings\ListItem.Designer.cs">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\RentListings\ProductListingModel.cs" />
+    <Compile Include="Modules\RentListings\RentListingModel.cs" />
+    <Compile Include="Modules\Search\SearchModel.cs" />
+    <Compile Include="Modules\Search\SearchView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\Search\SearchView.Designer.cs">
+      <DependentUpon>SearchView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\User\LoginView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\User\LoginView.Designer.cs">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\User\SignUpView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Modules\User\SignUpView.Designer.cs">
+      <DependentUpon>SignUpView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\User\UserModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template\Body.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\Body.designer.cs">
+      <DependentUpon>Body.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\Footer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\Footer.designer.cs">
+      <DependentUpon>Footer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\header.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\header.designer.cs">
+      <DependentUpon>header.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Template\Wrapper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Template\Wrapper.designer.cs">
+      <DependentUpon>Wrapper.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\AddProducts\addProductView.resx">
+      <DependentUpon>addProductView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DashBoard\ActionBar.resx">
+      <DependentUpon>ActionBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DashBoard\AdsPage.resx">
+      <DependentUpon>AdsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\DashBoard\UserDashBoard.resx">
+      <DependentUpon>UserDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Home\Categories.resx">
+      <DependentUpon>Categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Home\HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Product\NadlanProduct.resx">
+      <DependentUpon>NadlanProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Product\PetsProducts.resx">
+      <DependentUpon>PetsProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Product\ProductItem.resx">
+      <DependentUpon>ProductItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Product\SecondHandProducts.resx">
+      <DependentUpon>SecondHandProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Product\VehicleProducts.resx">
+      <DependentUpon>VehicleProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RentListings\ListingView.resx">
+      <DependentUpon>ListingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\RentListings\ListItem.resx">
+      <DependentUpon>ListItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\Search\searchView.resx">
+      <DependentUpon>SearchView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\User\LoginView.resx">
+      <DependentUpon>LoginView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modules\User\SignUpView.resx">
+      <DependentUpon>SignUpView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Template\Body.resx">
+      <DependentUpon>Body.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\Footer.resx">
+      <DependentUpon>Footer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\header.resx">
+      <DependentUpon>header.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Template\Wrapper.resx">
+      <DependentUpon>Wrapper.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\pictureBox1.Image.jpg" />
+    <Content Include="Resources\auth.jpg" />
+    <None Include="Resources\btnVehicles.Image.png" />
+    <Content Include="Resources\DB.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\signIn.jpg" />
+    <Content Include="Resources\signup.jpg" />
+    <Content Include="Resources\tablet.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
